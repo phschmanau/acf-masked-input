@@ -138,6 +138,13 @@ class jony_acf_field_masked_input extends acf_field {
 			'name'			=> 'mask',
 		) );
 		
+        acf_render_field_setting($field, [
+            'label'         => __('Placeholder', 'jony'),
+            'instructions'  => 'For example: __/__/____',
+            'type'          => 'text',
+            'name'          => 'placeholder',
+        ]);
+
 		acf_render_field_setting( $field, array(
 			'label'			=> __('Reverse Mask','jony'),
 			'instructions'	=> 'Reverse Mask',
